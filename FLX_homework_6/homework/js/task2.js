@@ -9,5 +9,5 @@
         '\nPrice with discount: ' + +priceWithDiscount.toFixed(2) +
         '\nSaved: ' + +saved.toFixed(2));
     } else {
-        alert('Invalid input data');
+        alert('Invalid data');
     }
