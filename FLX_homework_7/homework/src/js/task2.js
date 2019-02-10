@@ -8,8 +8,7 @@ while (agreeToPlay) {
   let randomNumber = Math.floor(Math.random() * (maxRange + 1 - minRange));
   let currentPrize = maxPrize;
   while (attempts) {
-    let userAnswer = parseInt(prompt(
-      'Enter a number from ' + minRange + ' to ' + maxRange +
+    let userAnswer = parseInt(prompt('Enter a number from ' + minRange + ' to ' + maxRange +
       '\nAttempts left: ' + attempts +
       '\nTotal prize: ' + totalPrize +
       '\nPossible prize on current attempt: ' + currentPrize, '0'))
