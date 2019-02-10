@@ -32,4 +32,6 @@ while (agreeToPlay) {
     maxPrize = 10;
   }
 }
-alert('You did not become a millionaire, but can.');
+if (!agreeToPlay) {
+  alert('You did not become a millionaire, but can.');
+}
