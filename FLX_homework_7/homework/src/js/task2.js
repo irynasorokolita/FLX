@@ -18,7 +18,6 @@ if (agreeToPlay) {
       totalPrize += currentPrize;
       maxPrize *= 3
       agreeToPlay = confirm('Congratulation! Your prize is: ' + totalPrize + '. Do you want to continue?');
-
       break;
     } else {
       attempts--;
