@@ -4,7 +4,7 @@ let attempts = 3;
 let totalPrize = 0;
 let maxPrize = 10;
 let agreeToPlay = confirm('Do you want to play a game?');
-if (agreeToPlay) {
+while (agreeToPlay) {
   let randomNumber = Math.floor(Math.random() * (maxRange + 1 - minRange));
   let currentPrize = maxPrize;
   while (attempts) {
@@ -19,9 +19,9 @@ if (agreeToPlay) {
       maxPrize *= 3
       agreeToPlay = confirm('Congratulation! Your prize is: ' + totalPrize + '. Do you want to continue?');
       break;
-    } else {
-      attempts--;
+    } else {      
       currentPrize = Math.floor (currentPrize / 2);
+      attempts--;
     }
   }
   if (attempts === 0) {
@@ -32,6 +32,5 @@ if (agreeToPlay) {
     maxRange = 5;
     maxPrize = 10;
   }
-} else {
-  alert('You did not become a millionaire, but can.');
 }
+alert('You did not become a millionaire, but can.');
