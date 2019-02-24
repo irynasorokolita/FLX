@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.cat-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #000;
+  width: 600px;
+  min-height: 500px;
+  margin: 20px;
+  padding: 10px;
+}
+.title {
+  font-size: 26px;
+  text-align: center;
+  font-weight: normal;
+}
+.warning-message {
+  visibility: hidden;
+  font-size: 18px;
+  color: #FF0000;
+  text-align: center;
+}
+.add-new-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #000;
+  margin: 15px;
+  height: 40px;
+}
+.add-input {
+	border: 1px solid #000;
+  width: 90%;
+  height: 24px;
+  padding: 0 10px;
+}
+button {
+  display: flex;
+  align-items: center;
+  background: none;
+	border: 0;
+	cursor: pointer;
+}
+.list{
+  list-style-type: none;
+  margin: 10px 20px;
+}
+.list_item {
+	align-items: center;
+	cursor: move;
+	display: flex;
+	margin-bottom: 5px;
+}
+.list_remove_item {
+	margin-left: auto;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+}
+.footer-icon {
+  width: 70px;
+  height: 70px;
+}
